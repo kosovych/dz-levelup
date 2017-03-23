@@ -1,0 +1,43 @@
+@media all and (max-width: 1295px) {
+	.page{
+	border: 1px solid red;
+	margin:0;
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.head{
+	width: 35%;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+	.nav{
+	flex-direction: column;
+	}
+
+
+	.galery{
+	outline: 1px solid red;
+	}
+
+	.galery-item{
+	margin-right: 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
