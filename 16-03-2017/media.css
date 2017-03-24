@@ -1,43 +1,113 @@
-@media all and (max-width: 1295px) {
+@media all and (max-width: 1020px) {
+
 	.page{
-	border: 1px solid red;
-	margin:0;
-	display: flex;
-	justify-content: space-between;
+		border: 1px solid red;
+		margin:0;
+		display:flex;
+		justify-content: space-between;
+		flex-direction: row;
 	}
 
 	.head{
-	width: 35%;
-	height: 100vh;
-	flex-direction: column;
-	justify-content: space-between;
+		flex-basis: 23%;
+		height: 50vh;
+		min-height: 155px;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
 	}
 
 	.nav{
-	flex-direction: column;
+		flex-direction: column;
 	}
-
-
+	.head-item{
+		width: 100%;
+		margin:0;
+	}
+	.head-item li {
+		/*padding: 5px 0px 5px 10px;*/
+		border-bottom:1px solid #DDDDDD;
+	}
+	.head-item li a{
+		width: 100%;
+		padding: 5px 0px 5px 10px;
+	}
 	.galery{
-	outline: 1px solid red;
+		justify-content: flex-start;
+		outline: 1px solid red;
+		max-width: 75%;
 	}
 
 	.galery-item{
-	margin-right: 0;
+		margin-left: 1.5%;
+    	margin-right: 1.75%;
+		flex-basis: 30%;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	.galery-item:nth-child(3n){
+		margin-right: 0;
 	}
+	.galery-item:nth-child(11){
+	transform: translateX(0);
+	}
+	.galery-item:nth-child(10){
+	transform: translateX(0);
+	}
+	input{
+		width: 75%;
+		box-sizing: border-box;
+	}
+	form button{
+		width: 25%;
+		box-sizing: border-box;
+		margin-left: -5px;
+	}
+	}
+@media all and (max-width: 690px){
+	#page{
+		position: relative;
+		min-width: 360px;
+	}
+	.humb {
+		display: block;
+		padding: 5px;
+		width: 35px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		border:1px solid #DDDDDD;
+		background: #F7F7F7;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+	.head{
+		display: none;
+		min-height: 159px;
+		margin-top: 0;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	.humb:hover{
+		display: hidden;
+		opacity: 0;
+	}
+	.humb:hover + .head{
+		display: block;
+	}
+	.head:hover {
+		display: block;
+	}
+	.galery{
+		margin-top: 67px;
+		justify-content: flex-start;
+		outline: 1px solid red;
+		max-width: 100%;
+	}
+	.galery-item{
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.head-item:last-child {
+    width: 101.5%;}
+}

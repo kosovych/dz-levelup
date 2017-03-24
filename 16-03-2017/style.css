@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Exo';
+}
+body{
+	background: url(logo/bg-item.jpeg) left top repeat;
+
+}
+.humb {
+	display: none;
 }
 #page{
 	max-width:1280px;
 	margin: 0 auto 40px auto;
+
 }
 header{
 	border-top:1px solid #DDDDDD;
@@ -16,12 +26,13 @@ header{
 	height: 100%;
 	font-weight: bold;
 	text-decoration: none;
-	color: #735f5f;
+	color: #616161;
 	text-transform: capitalize;
 	box-sizing: border-box;
 }
-a:hover{
-	box-sizing: border-box;
+.nav a:hover{
+	background: #e1e1e1;
+	color: black;
 }
 .head{
 	display: flex;
@@ -37,16 +48,17 @@ a:hover{
 	margin:0 10px;
 }
 .nav{
+	margin-left: 0px;
 	list-style: none;
 	display: flex;
 	align-content: center;
 	height: 100%;
 }
 .nav-item{
-	margin-right:20px;
+	padding:0 10px 0 10px;
 }
 input{
-	padding: 5px;
+	padding: 4px;
 	border:2px solid #E1E1E1;
 	background: #F7F7F7;
 	border-top-left-radius: 3px;
@@ -71,13 +83,19 @@ button:hover,button:active,button:focus{
 .galery{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: stretch;
 	align-content:center;
 }
+.galery-item a{
+	text-decoration: none;
+	color: black;
+	text-transform: capitalize;
+}
 .galery-item {
-	height: 355px;
-	margin-right: 1.875%;
+	padding-bottom: 10px;
+	height: auto;
+	flex-basis: 23.59375%;
 	margin-top: 20px;
 	max-width: 300px;
 	border-radius: 5px;
@@ -85,8 +103,11 @@ button:hover,button:active,button:focus{
 	background: #F7F7F7;
 	overflow: hidden;
 }
-.galery-item:nth-child(4n) {
-	margin-right: 0;
+.galery-item:nth-child(11){
+	transform: translateX(-107.5%);
+}
+.galery-item:nth-child(10){
+	transform: translateX(-54%);
 }
 .galery-item>a {
 	height: 100%;
