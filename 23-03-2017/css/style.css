@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Dosis', sans-serif;
+/*	outline: 1px solid red;*/
+}
+.fs-14px{
+	font-size: 14px;
+}
+.nav{
+	width: 100%;
+	height: 62px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,8,12,.1);
+	z-index: 99;
+
+}
+.max-width{
+	max-width: 1210px;
+	margin: 0 auto;
+}
+.nav-ul{
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	
+	margin: 0 auto;
+	list-style: none;
+
+}
+.nav-ul li {
+	flex-grow: 1;
+	height: 100%;
+	text-transform: uppercase;
+	font-size: 17px;
+
+}
+.nav-ul li a{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	padding-top: 22px;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	color:rgba(0,8,12,.6);
+	font-weight: 400;
+}
+.nav-ul li a:hover{
+	color:rgba(0,8,12,.8);
+	background: rgba(0,8,12,.1);
+}
+.nav-ul li a.active{
+	text-decoration: underline;
+	font-weight: bold;
+}
+.production{
+	position: relative;
+	height: 100vh;
+	background-image: url(../img/bg-production.png);
+	background-position: center;
+	background-size: cover;
+}
+.production .logo-production{
+	position: absolute;
+	width: 30vw;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.production .logo-production img{
+	width: 100%;
+}
+.discography-slide{
+	background-image: url(../img/bg-discography.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+.discography h1{
+	text-align: center;
+	margin: 160px 0px 40px 0px;
+	font-size: 50px;
+	color:#9b6f56;
+	text-decoration: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: #000;
+    font-weight: 300;
+}
+.discography p{
+	display: block;
+	margin: 0 auto 150px auto;
+	text-align: center;
+	width: 35%;
+	color:#798285;
+	font-size: 14px;
+}
+.discography-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 10px 0 10px;
+	padding-bottom: 340px;
+}
+.title{
+	flex-basis: 35%;
+}
+.description{
+	flex-basis: 60%;
+	margin-bottom: 110px;
+}
+
+.title-data{
+	margin-left: -3px;
+	padding-bottom: 12px;
+	opacity: .65;
+	font-weight: 600;
+}
+.title-label{
+	border-top: 1px solid #000;
+	padding-top: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.description h2{
+	font-size: 23px;
+	margin-bottom: 24px;
+}
+.description p{
+	color: #acacac;
+	margin-bottom: 32px;
+}
+.description button{
+	width: 195px;
+	height: 55px;
+	text-transform: uppercase;
+	border: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-weight: 600;
+	cursor: pointer;
+
+}
+.btn-1{
+	background-image: url(../img/btn-1.png);
+	color: #fff;
+}
+.btn-2{
+	background-image: url(../img/btn-2.png);
+}
+.btn-3{
+	background-image: url(../img/btn-3.png);
+}
