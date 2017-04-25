@@ -2,10 +2,20 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Dosis', sans-serif;
-/*	outline: 1px solid red;*/
 }
 .fs-14px{
 	font-size: 14px;
+}
+.slide-h1{
+	text-align: center;
+	padding: 160px 0px 40px 0px;
+	font-size: 50px;
+	color:#9b6f56;
+	text-transform: uppercase;
+	text-decoration: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: #000;
+    font-weight: 300;
 }
 .nav{
 	width: 100%;
@@ -78,17 +88,7 @@
 	background-repeat: no-repeat;
 	background-position: bottom center;
 }
-.discography h1{
-	text-align: center;
-	margin: 160px 0px 40px 0px;
-	font-size: 50px;
-	color:#9b6f56;
-	text-decoration: line-through;
-    text-decoration-style: solid;
-    text-decoration-color: #000;
-    font-weight: 300;
-}
-.discography p{
+h1 + p{
 	display: block;
 	margin: 0 auto 150px auto;
 	text-align: center;
@@ -123,11 +123,11 @@
 	font-weight: 600;
 	text-transform: uppercase;
 }
-.description h2{
+div > h2{
 	font-size: 23px;
 	margin-bottom: 24px;
 }
-.description p{
+h2 + p{
 	color: #acacac;
 	margin-bottom: 32px;
 }
@@ -140,7 +140,6 @@
 	background-repeat: no-repeat;
 	font-weight: 600;
 	cursor: pointer;
-
 }
 .btn-1{
 	background-image: url(../img/btn-1.png);
@@ -151,4 +150,146 @@
 }
 .btn-3{
 	background-image: url(../img/btn-3.png);
+}
+.concert h1{
+	color: #66a4ae;
+}
+.concert-container{
+	margin-top: 475px;
+	display: flex;
+	justify-content: flex-start;
+}
+.cincert-item{
+	flex-basis: 60%;
+}
+.concert-silde{
+	padding-bottom: 250px;
+	background-image: url(../img/bg-concert.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+.transparent-button{
+	width: 195px;
+	height: 55px;
+	font-weight: 600;
+	background: none;
+	border:1px solid #b8b9b9;
+	cursor: pointer;
+}
+.composition-slide{
+	padding-bottom: 105px;
+}
+.composition-container{
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 55px;
+}
+.composition-container > div {
+	flex-basis: 605px;
+}
+.description-container{
+	background-color: #f5f6f6;
+	box-sizing: border-box;
+	padding:35px;
+}
+.listen,
+.like,
+.re-post,
+.comment{
+	display: inline-block;
+	margin-left: 35px;
+	background-color: #f5f6f6;
+	font-size: 12px;
+	color: #999999;
+	text-decoration: none;
+	padding-left: 25px;
+	height: 17px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	vertical-align: bottom;
+}
+.player-container{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.conrols-container{
+	
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: -45px;
+	padding:0 35px 0 35px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.conrols-container>*{
+	cursor: pointer;
+}
+.play{
+	height: 16px;
+	width: 12px;
+	background-image: url(../img/icon/play.png);
+
+}
+.progres{
+	
+	display: flex;
+	align-items: center;
+	width: 67.76859504132231%;
+}
+.before{
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	background: #fff;
+}
+.circle{
+	display: inline-block;
+	min-width: 12px;
+	height: 12px;
+	margin-left: -6px;
+	border-radius: 6px 6px 6px 6px;
+	background: #fff;
+}
+.after{
+	display: inline-block;
+	width: 100%;
+	height: 2px;
+	background: #707070;
+}
+.time-line{
+	font-size: 12px;
+}
+.first-time{
+	color: #fff;
+}
+.last-time{
+	color:#8a8a8a;
+}
+.listen{
+	background-image: url(../img/icon/listen.png);
+}
+.like{
+	background-image: url(../img/icon/like.png);
+}
+.re-post{
+	background-image: url(../img/icon/re-post.png);
+}
+.comment{
+	background-image: url(../img/icon/comment.png);
+}
+.indian-sammer{
+	background-image: url(../img/track-1.png);
+}
+.show-me-love{
+	background-image: url(../img/track-2.png);
+}
+.chill-nation{
+	background-image: url(../img/track-3.png);
 }
