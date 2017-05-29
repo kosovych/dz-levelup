@@ -1,5 +1,5 @@
 
- function typeOgArg() {
+ function typeOfArg() {
 
 	var arr = [];
 
@@ -14,4 +14,4 @@
 	return arr;
 }
 
-console.log(typeOgArg(null, undefined, {}));
+console.log(typeOfArg(null, undefined, {}));
