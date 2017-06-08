@@ -112,6 +112,7 @@ const student = {
 
 		if (progresParse < (1 - wantedObj.progress)){
 			wantedObj.progress = progresParse + wantedObj.progress;
+			wantedObj.progress = +wantedObj.progress.toFixed(2);
 			return wantedObj;
 		} else {
 			console.log("Стужент прозанимался болльше, чем нужно");
@@ -141,5 +142,5 @@ console.log(student.addNewCourse("Sam", "PHP", 12));
 console.log(student.getAvarageMarkByCourse("JS"));
 console.log(student.getAvarageMark());
 console.log(student.addMark("JS", 1));
-console.log(student.addProgress("JS", 30));
+console.log(student.addProgress("JS", 19));
 console.log(student.getProgress("JS"));
