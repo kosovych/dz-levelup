@@ -128,7 +128,7 @@ const student = {
 		});
 
 		var progressInPer = wantedObj.progress*100;
-		return `${progressInPer}% курса пройдено`;
+		return `${progressInPer.toFixed()}% курса пройдено`;
 	}
 
 }
@@ -141,5 +141,5 @@ console.log(student.addNewCourse("Sam", "PHP", 12));
 console.log(student.getAvarageMarkByCourse("JS"));
 console.log(student.getAvarageMark());
 console.log(student.addMark("JS", 1));
-console.log(student.addProgress("JS", 100));
+console.log(student.addProgress("JS", 30));
 console.log(student.getProgress("JS"));
