@@ -135,12 +135,12 @@ const student = {
 }
 
 console.log(student);
-console.log(student.getFullName());
-console.log(student.getAge());
-console.log(student.getCourses());
-console.log(student.addNewCourse("Sam", "PHP", 12));
-console.log(student.getAvarageMarkByCourse("JS"));
-console.log(student.getAvarageMark());
-console.log(student.addMark("JS", 1));
-console.log(student.addProgress("JS", 19));
-console.log(student.getProgress("JS"));
+console.log("getFullName =>", student.getFullName());
+console.log("getAge =>", student.getAge());
+console.log("getCourses =>", student.getCourses());
+console.log("addNewCourse =>", student.addNewCourse("Sam", "PHP", 12));
+console.log("getAvarageMarkByCourse =>", student.getAvarageMarkByCourse("JS"));
+console.log("getAvarageMark =>", student.getAvarageMark());
+console.log("addMark =>", student.addMark("JS", 1));
+console.log("addProgress =>", student.addProgress("JS", 19));
+console.log("getProgress =>", student.getProgress("JS"));
