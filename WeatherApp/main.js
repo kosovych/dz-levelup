@@ -53,15 +53,15 @@ function otherStuff(API_TYPE) {
 
 	var day = data.getDay();
 
-	var presentDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-0${data.getDate()}`; //день месяца
-	var secontDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-0${data.getDate() + 1}`; //день месяца
-	var thirdDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-0${data.getDate() + 2}`; //день месяца
-	var fourthDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-0${data.getDate() + 3}`; //день месяца
-
-	// var presentDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-${data.getDate()}`; //день месяца
-	// var secontDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-${data.getDate() + 1}`; //день месяца
+	// var presentDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-0${data.getDate()}`; //день месяца
+	// var secontDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-0${data.getDate() + 1}`; //день месяца
 	// var thirdDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-${data.getDate() + 2}`; //день месяца
 	// var fourthDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-${data.getDate() + 3}`; //день месяца
+
+	var presentDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-${data.getDate()}`; //день месяца
+	var secontDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-${data.getDate() + 1}`; //день месяца
+	var thirdDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-${data.getDate() + 2}`; //день месяца
+	var fourthDayWeatherData = `${data.getFullYear()}-0${data.getMonth() + 1}-${data.getDate() + 3}`; //день месяца
 
 	console.log(presentDayWeatherData, secontDayWeatherData, thirdDayWeatherData, fourthDayWeatherData);
 
